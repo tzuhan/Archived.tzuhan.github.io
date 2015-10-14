@@ -3,51 +3,112 @@
 <!--- Created by Tzu-Han Hsu, all rights reserved -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Tzu-Han Hsu's Portfolio Website</title>
-    <meta name="description" content="Tzu-Han Hsu's Portfolio Website"> 
+    <meta name="description" content="Tzu-Han Hsu's Portfolio Website">
     <meta name="author" content="Tzu-Han Hsu">
     <meta name="created-time" content="2015/01/09">
-
-
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-
-
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
-    <!-- Mine CSS file -->
+    <!-- My stylesheet-->
     <link rel="stylesheet" type="text/css" href="css/all.css">
-    
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
 
+<body class='background'>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Tzu-Han's Protfolio</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container" role="main">
+        <!-- home page -->
+        <div id="home">
+            <h1>Diving into the world of wonders</h1>
+        </div>
+        <!-- portfolio page -->
+        <div id="protforlio">
+            <div class="page-header">
+                <h1>Portfolio</h1>
+            </div>
 
-  <body class='background'>
+            <div class="row"></div>
+        </div>
 
+        <!-- contact page -->
+        <div id="contact">
+            <div class="page-header">
+                <h1>Contact information</h1>
+            </div>
+            <div class="row"></div>
+            <table class="table table-bordered col-md-8">
+                <tr>
+                    <td><b>Name</b></td>
+                    <td>Tzu-Han Hsu, 徐子函（ジョシカン）</td>
+                </tr>
+                <tr>
+                    <td><b>Nationality</b></td>
+                    <td>Taiwan</td>
+                </tr>
+                <tr>
+                    <td><b>Current residence<b></td>
+                    <td>Tokyo, Japan</td>
+            </tr>
+            <tr>
+                <td><b>Contacts<b></td>
+                <td>
+                    <ul class="list-unstyled">
+                        <li>Mail: tzuhan960691@<!--use image--></li>
+                        <li>Twitter: </li>
+                        <li>Pixiv: <a href="http://www.pixiv.net/member.php?id=2495093">2495093</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Self Introduction<b></td>
+                <td>
+                    <p>A game programmer as vocation, and a 2D artist as an amateur.</p>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
-    <div class="nav_bar"></div>
-
-    <h1>Tzu-Han Hsu(徐子函)</h1>
-
   </body>
 </html>
