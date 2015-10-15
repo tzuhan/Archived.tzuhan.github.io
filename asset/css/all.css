@@ -1,7 +1,67 @@
+/*///////////////////////////////////////*/
+/*Overall*/
+/*///////////////////////////////////////*/
 body {
-  padding-top: 70px;
-  padding-bottom: 30px;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
 }
+.full-win{
+    padding-top: 10vh;
+    height: 100vh;
+}
+
+
+/*///////////////////////////////////////*/
+/*Home page*/
+/*///////////////////////////////////////*/
+.wave{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    background-repeat: repeat-x;
+}
+.wave-red{
+    left: 25vh;
+    z-index: -7;
+    background-image: url("../img/web/wave-red.png");
+}
+.wave-blue{
+    left: 14vh;
+    z-index: -6;
+    background-image: url("../img/web/wave-blue.png");
+}
+.wave-orange{
+    left: 5vh;
+    z-index: -5;
+    background-image: url("../img/web/wave-orange.png");
+}
+.wave-white{
+    left: 0vh;
+    z-index: -1;
+    background-image: url("../img/web/wave-white.png");
+}
+
+.whale-bg{
+    z-index: -4;
+}
+.whale-bg img{
+    clip-path: url("../img/web/whale-mask.svg");
+}
+.whale-mask{
+    width: 2280px;
+    height: 1284px;
+    z-index: -3;
+}
+
+.whale-line{
+    right: 0vh;
+    z-index: -2;
+}
+
+/*///////////////////////////////////////*/
+/*Color scheme*/
+/*///////////////////////////////////////*/
 .my-red-bg{
     background-color: #F2385A;
 }
@@ -33,10 +93,10 @@ body {
 .my-black-bg{
     color: #2B2922;
 }
-/*body.background {
+body.background {
     background-color: #2B2922;
 }
-
+/*
 h1 {
     color: #E9F1DF;
 }

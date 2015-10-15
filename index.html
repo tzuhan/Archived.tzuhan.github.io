@@ -5,7 +5,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -14,16 +14,15 @@
     <meta name="author" content="Tzu-Han Hsu">
     <meta name="created-time" content="2015/01/09">
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- My stylesheet-->
     <link rel="stylesheet" type="text/css" href="asset/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -35,14 +34,8 @@
 <body class='background'>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Tzu-Han's Protfolio</a>
+            <div class="navbar-header" id="top">
+                <a class="navbar-brand" href="#home">Tzu-Han's Protfolio</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -56,8 +49,22 @@
     </nav>
     <div class="container" role="main">
         <!-- home page -->
-        <div id="home">
-            <h3>Diving into the world of wonders</h3>
+        <div class="full-win" id="home">
+            <div class="page-header">
+                <h1>Diving into the world of wonders</h1>
+            </div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row">
+                <div class="wave wave-red"></div>
+                <div class="wave wave-blue"></div>
+                <div class="wave wave-orange"></div>
+                <div class="whale-line"><img src="asset/img/web/whale-line.png"></div>
+                <!--<canvas class="whale-mask"></canvas> -->
+                <div class="whale-bg"><img src="asset/img/web/whale-bg-low.png"></div>
+                <div class="wave wave-white"></div>
+            </div>
         </div>
 
 
@@ -65,7 +72,7 @@
 
 
         <!-- portfolio page -->
-        <div id="protforlio">
+        <div class="full-win" id="portfolio">
             <div class="page-header">
                 <h1>Portfolio</h1>
             </div>
@@ -78,7 +85,7 @@
 
 
         <!-- contact page -->
-        <div id="contact">
+        <div class="full-win" id="contact">
             <div class="page-header">
                 <h1>Contact information</h1>
             </div>
@@ -101,7 +108,7 @@
                 <td>
                     <ul class="list-unstyled">
                         <li>Mail: <img src="http://safemail.justlikeed.net/e/d63e5c308fb6da10ae2c1e8f0c472aaa.png" border="0" align="absbottom"></a></li>
-                        <li>Twitter: </li>
+                        <li>LinkedIn: </li>
                         <li>Pixiv: <a href="http://www.pixiv.net/member.php?id=2495093">2495093</a></li>
                     </ul>
                 </td>
@@ -116,8 +123,9 @@
         </div>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="asset/js/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="asset/js/bootstrap.min.js"></script>
+    <script src="asset/js/all.js"></script>
   </body>
 </html>
