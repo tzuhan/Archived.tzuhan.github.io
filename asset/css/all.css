@@ -17,6 +17,22 @@ body {
 .my-black-bg{
     background-color: #2B2922;
 }
+
+.my-red-font{
+    color: #F2385A;
+}
+.my-orange-font{
+    color: #F5A503;
+}
+.my-blue-bg{
+    color: #36B1BF;
+}
+.my-white-bg{
+    color: #E9F1DF;
+}
+.my-black-bg{
+    color: #2B2922;
+}
 /*body.background {
     background-color: #2B2922;
 }
