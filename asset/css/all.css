@@ -18,7 +18,7 @@ body {
 .wave{
     position: absolute;
     height: 200px;
-    width: 100%;
+    width: 100vw;
     background-repeat: repeat-x;
 }
 .wave-red{
@@ -42,22 +42,34 @@ body {
     background-image: url("../img/web/wave-white.png");
 }
 
+
+/*///////////////////////////////////////*/
+/*Whale CSS*/
+/*///////////////////////////////////////*/
+.whale{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
 .whale-bg{
     z-index: -4;
-}
-.whale-bg img{
-    clip-path: url("../img/web/whale-mask.svg");
+    overflow: hidden;
+    background-image: url("../img/web/whale-bg-low.png");
+    /* not a <clippath>
+    clip-path: url("../img/web/whale-mask.png");
+    -webkit-clip-path: url("../img/web/whale-mask.png");*/
+    -webkit-mask-image: url("../img/web/whale-mask.png");
 }
 .whale-mask{
-    width: 2280px;
-    height: 1284px;
     z-index: -3;
 }
 
 .whale-line{
-    right: 0vh;
     z-index: -2;
 }
+
 
 /*///////////////////////////////////////*/
 /*Color scheme*/
