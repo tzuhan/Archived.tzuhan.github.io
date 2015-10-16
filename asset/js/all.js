@@ -7,34 +7,35 @@ var x_red, x_blue, x_orange, x_white;
 
 /*redefine positions and variables when window resize*/
 $(window).resize(function() {
-    width = $(window).width();
-    height = $(window).height();
-
-    //resize wave images position
-    $('.wave-white').offset({top:height-200});
-
-    $('.wave-orange').offset({top:height-225});
-
-    $('.wave-blue').offset({top:height-250});
-
-    $('.wave-red').offset({top:height-275});
+    reposition();
 });
 
-/*Redefine positions and variables when window scroll*/
+
+/*redefine positions and variables when window scroll*/
 $(window).scroll(function() {
+    reposition();
+});
+
+/*redefine position and variables when window opens*/
+$(document).ready(function(){
+    reposition();
+});
+
+
+/*Reposition function*/
+function reposition(){
     width = $(window).width();
     height = $(window).height();
 
     //resize wave images position
-    $('.wave-white').offset({top:height-200});
+    $('.wave-white').offset({top:2*height-200});
 
-    $('.wave-orange').offset({top:height-225});
+    $('.wave-orange').offset({top:2*height-225});
 
-    $('.wave-blue').offset({top:height-250});
+    $('.wave-blue').offset({top:2*height-250});
 
-    $('.wave-red').offset({top:height-275});
-});
-
+    $('.wave-red').offset({top:2*height-275});
+};
 /*//////////////////////////*/
 /*Whale animation*/
 /*//////////////////////////*/
