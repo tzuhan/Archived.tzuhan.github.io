@@ -1,0 +1,199 @@
+/*///////////////////////////////////////*/
+/*Overall*/
+/*///////////////////////////////////////*/
+body {
+    /*max-width: 100%;
+    overflow-x: hidden;*/
+    font-family: 'Open Sans', sans-serif;
+}
+.full-win{
+    padding-top: 10vh;
+    height: 100vh;
+}
+
+
+/*///////////////////////////////////////*/
+/*Home page*/
+/*///////////////////////////////////////*/
+.wave{
+    position: absolute;
+    height: 200px;
+    width: 100vw;
+    background-repeat: repeat-x;
+}
+.wave-red{
+    left: 25vh;
+    z-index: -7;
+    background-image: url("../img/web/wave-red.png");
+}
+.wave-blue{
+    left: 14vh;
+    z-index: -6;
+    background-image: url("../img/web/wave-blue.png");
+}
+.wave-orange{
+    left: 6vh;
+    z-index: -5;
+    background-image: url("../img/web/wave-orange.png");
+}
+.wave-white{
+    left: 0vh;
+    z-index: -1;
+    background-image: url("../img/web/wave-white.png");
+}
+
+
+/*///////////////////////////////////////*/
+/*Whale CSS*/
+/*///////////////////////////////////////*/
+.whale{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 100%;
+}
+.whale-bg{
+    z-index: -4;
+    overflow: hidden;
+    /* not a <clippath>
+    background-image: url("../img/web/whale-bg-low.png");
+    clip-path: url("../img/web/whale-mask.png");
+    -webkit-clip-path: url("../img/web/whale-mask.png");*/
+    /*-webkit-mask-box-image: url("../img/web/whale-mask.png");
+    -webkit-mask-image: url("../img/web/whale-mask.png");
+    mask: url(../img/web/circle.svg#whale-mask);
+    */
+}
+.whale-clip{
+    -webkit-clip-path: polygon(539px 1285px, 595.859px 1248.558px, 618.143px 1240.23px, 644.409px 1239.442px, 
+669.749px 1235.033px, 689.628px 1229.84px, 710.103px 1226.892px, 740.373px 1218.899px, 775.318px 1191.748px, 779.451px 1178.398px, 784.528px 1162.547px, 
+782.25px 1155.388px, 780.096px 1151.132px, 777.816px 1113.428px, 777.718px 1061.082px, 779.082px 1000.094px, 786.82px 951.411px, 796.07px 887.328px, 
+806.362px 849.952px, 825.322px 786.119px, 854.901px 718.195px, 859.691px 706.869px, 873.871px 672.088px, 886.786px 634.514px, 910.453px 585.476px, 
+916.297px 573.484px, 921.473px 565.589px, 928.207px 555.811px, 941.331px 543.067px, 956.132px 528.412px, 973.86px 503.041px, 992.53px 478.116px, 1000.703px 461.806px, 
+1005.785px 455.531px, 1008.753px 451.776px, 1016.983px 440.711px, 1033.153px 423.938px, 1048.01px 412.891px, 1051.566px 411.346px, 1061.992px 393.756px, 
+1064.545px 390.711px, 1075.776px 380.254px, 1084.774px 370.005px, 1086.994px 366.965px, 1105.85px 351.781px, 1125.803px 340.566px, 1160.952px 317.971px, 
+1184.069px 301.392px, 1193.734px 296.58px, 1200.715px 291.851px, 1228.556px 274.96px, 1234.845px 270.806px, 1247.332px 264.066px, 1266.048px 262.879px, 
+1270.76px 260.071px, 1277.897px 254.832px, 1281.792px 251.742px, 1279.219px 248.125px, 1265.735px 244.224px, 1238.582px 245.904px, 1231.964px 244.822px, 
+1209.711px 238.984px, 1195.969px 237.993px, 1170.173px 233.86px, 1153.238px 233.819px, 1151.456px 233.165px, 1137.974px 227.537px, 1126.427px 223.147px, 
+1124.69px 223.15px, 1105.521px 221.007px, 1084.981px 212.292px, 1072.067px 201.656px, 1068.531px 200.03px, 1063.222px 198.276px, 1062.397px 197.828px, 
+1046.561px 195.752px, 1032.207px 183.838px, 1020.552px 173.192px, 1019.6px 173.316px, 1004.656px 167.244px, 995.977px 165.821px, 992.633px 166.892px, 
+978.53px 161.345px, 966.097px 151.945px, 963.036px 151.758px, 944.239px 148.692px, 932.989px 144.756px, 918.813px 144.759px, 909.191px 138.958px, 895.014px 133.223px, 
+875.562px 133.707px, 871.64px 131.854px, 858.494px 128.511px, 849.081px 128.866px, 845.44px 126.755px, 835.786px 123.208px, 825.86px 125.791px, 817.602px 124.007px, 
+807.199px 124.462px, 800.183px 121.746px, 795.258px 121.997px, 785.222px 124.853px, 780.359px 126.005px, 788.765px 108.94px, 799.005px 97.825px, 814.367px 87.287px, 
+826.858px 84.88px, 833.127px 79.676px, 836.489px 76.947px, 841.631px 74.061px, 850.812px 72.171px, 864.878px 66.857px, 884.007px 64.902px, 901.734px 65.94px, 
+915.521px 59.274px, 924.574px 61.49px, 933.806px 69.694px, 950.484px 74.181px, 958.204px 72.944px, 964.896px 70.489px, 988.765px 76.581px, 990.991px 78.902px, 
+1006.454px 82.042px, 1020.618px 85.652px, 1039.404px 86.277px, 1045.848px 86.144px, 1062.626px 79.716px, 1085.211px 78.803px, 1092.814px 79.601px, 1098.56px 81.366px, 
+1109.366px 84.346px, 1125.107px 80.081px, 1132.06px 85.623px, 1132.061px 86.62px, 1147.5px 97.955px, 1169.029px 102.177px, 1188.644px 108.729px, 1198.93px 108.11px, 
+1223.669px 111.625px, 1229.588px 111.885px, 1248.468px 116.656px, 1259.82px 120.955px, 1276.129px 125.58px, 1283.55px 125.063px, 1285.051px 135.946px, 
+1291.547px 138.166px, 1319.997px 147.5px, 1344.35px 155.315px, 1358.33px 163.536px, 1380.888px 171.463px, 1408.891px 184.41px, 1425.955px 191.769px, 
+1439.617px 196.057px, 1446.719px 196.002px, 1470.834px 194.94px, 1497.911px 192.356px, 1520.84px 192.371px, 1532.734px 193.035px, 1543.465px 194.375px, 
+1559.045px 184.333px, 1560.207px 181.998px, 1562.195px 177.336px, 1558.002px 175.028px, 1555.912px 174.697px, 1554.846px 164.005px, 1555.821px 154.805px, 
+1550.902px 144.22px, 1553.479px 138.988px, 1549.775px 125.427px, 1549.921px 118.068px, 1550.6px 113.01px, 1545.374px 105.08px, 1548.396px 93.766px, 
+1549.214px 90.065px, 1543.662px 81.483px, 1538.947px 76.859px, 1538.583px 72.146px, 1539.651px 57.076px, 1536.112px 50.646px, 1534.95px 43.447px, 1556.656px 48.326px, 
+1556.657px 54.887px, 1574.601px 71.879px, 1578.382px 74.921px, 1584.127px 83.291px, 1587.949px 86.416px, 1595.024px 89.042px, 1604.341px 97.043px, 
+1607.717px 100.385px, 1615.037px 119.585px, 1615.879px 121.3px, 1619.33px 142.483px, 1620.342px 145.497px, 1634.16px 160.668px, 1634.359px 170.485px, 
+1636.117px 177.149px, 1638.942px 181.441px, 1650.673px 187.957px, 1654.405px 187.491px, 1677.291px 187.056px, 1714.003px 187.357px, 1756.611px 193.089px, 
+1778.217px 195.957px, 1798.112px 197.046px, 1814.268px 198.938px, 1833.979px 200.936px, 1892.05px 204.036px, 1909.253px 205.776px, 1920.541px 204.791px, 
+1934.465px 204.063px, 1950.485px 201.753px, 1983.159px 196.982px, 1985.108px 197.089px, 2008.409px 202.82px, 2024.684px 213.876px, 2031.852px 215.327px, 
+2042.353px 218.631px, 2048.685px 227.699px, 2050.247px 232.228px, 2051.956px 238.55px, 2052.606px 240.391px, 2052.406px 262.406px, 2054.018px 268.594px, 
+2054.548px 279.598px, 2048.811px 293.943px, 2041.302px 304.202px, 2035.903px 312.765px, 2030.849px 318.589px, 2015.842px 343.264px, 2011.297px 347.896px, 
+1995.936px 359.622px, 1989.476px 374.244px, 1979.039px 382.863px, 1957.465px 388.76px, 1937.059px 400.946px, 1934.953px 403.941px, 1922.621px 414.032px, 
+1921.668px 414.191px, 1907.494px 424.186px, 1896.326px 427.235px, 1893.068px 427.641px, 1883.415px 437.277px, 1876.193px 441.385px, 1859.856px 449.284px, 
+1857.029px 453.489px, 1847.036px 461.143px, 1839.405px 465.466px, 1823.241px 473.841px, 1818.712px 477.797px, 1810.617px 486.324px, 1807.283px 489.429px, 
+1801.408px 496.52px, 1787.756px 509.819px, 1780.052px 516.355px, 1765.538px 524.238px, 1763.43px 526.309px, 1744.545px 533.692px, 1738.885px 536.127px, 
+1735.181px 539.738px, 1722.137px 551.763px, 1714.239px 555.998px, 1711.069px 557.793px, 1703.252px 563.204px, 1676.94px 570.337px, 1667.319px 577.055px, 
+1659.215px 579.89px, 1643.594px 587.261px, 1636.059px 590.823px, 1623.36px 593.759px, 1599.817px 605.606px, 1590.915px 607.671px, 1573.493px 618.496px, 
+1565.112px 616.111px, 1556.897px 618.046px, 1554.44px 618.083px, 1541.111px 627.231px, 1529.22px 634.885px, 1521.417px 631.575px, 1513.791px 632.129px, 
+1504.764px 635.963px, 1489.123px 640.612px, 1476.122px 646.959px, 1462.482px 653.892px, 1459.843px 654.931px, 1433.592px 662.105px, 1428.002px 667.739px, 
+1425.624px 670.714px, 1424.221px 676.007px, 1422.609px 679.819px, 1416.432px 680.936px, 1407.112px 684.21px, 1399.53px 684.391px, 1392.651px 684.499px, 
+1375.261px 695.188px, 1333.699px 714.502px, 1313.83px 728.979px, 1296.687px 739.1px, 1290.362px 743.248px, 1273.376px 752.156px, 1269.113px 755.352px, 
+1264.723px 763.604px, 1257.783px 760.023px, 1251.166px 763.445px, 1249.087px 771.184px, 1246.844px 771.924px, 1233.581px 774.157px, 1228.949px 774.265px, 
+1217.029px 784.737px, 1208.255px 792.608px, 1203.882px 796.775px, 1199.961px 801.343px, 1198.38px 809.57px, 1184.968px 814.738px, 1182.301px 808.103px, 
+1177.104px 810.454px, 1169.06px 816.197px, 1162.425px 825.289px, 1157.74px 828.608px, 1150.509px 839.712px, 1123.276px 859.039px, 1120.134px 863.515px, 
+1108.646px 875.095px, 1104.188px 877.517px, 1086.892px 899.391px, 1081.416px 903.537px, 1073.225px 917.914px, 1068.073px 923.675px, 1058.743px 930.46px, 
+1054.529px 933.58px, 1042.855px 943.093px, 1033.479px 953.226px, 1019.002px 973.318px, 1010.676px 984.042px, 1007.084px 989.953px, 1000.053px 999.929px, 
+998.736px 1002.021px, 984.025px 1036.352px, 980.2px 1041.476px, 965.502px 1064.899px, 953.379px 1095.984px, 952.009px 1105.754px, 946.521px 1111.841px, 
+943.373px 1113.866px, 932.434px 1121.135px, 920.71px 1150.584px, 915.631px 1172.539px, 917.491px 1191.524px, 925.619px 1236.142px, 924.841px 1242.351px, 
+928.279px 1253.767px, 957px 1285px, 539px 1285px);
+}
+.whale-line{
+    z-index: -2;
+}
+
+
+/*///////////////////////////////////////*/
+/*Color scheme*/
+/*///////////////////////////////////////*/
+.my-red-bg{
+    background-color: #F2385A;
+}
+.my-orange-bg{
+    background-color: #F5A503;
+}
+.my-blue-bg{
+    background-color: #36B1BF;
+}
+.my-white-bg{
+    background-color: #E9F1DF;
+}
+.my-black-bg{
+    background-color: #2B2922;
+}
+
+.my-red-font{
+    color: #F2385A;
+}
+.my-orange-font{
+    color: #F5A503;
+}
+.my-blue-bg{
+    color: #36B1BF;
+}
+.my-white-bg{
+    color: #E9F1DF;
+}
+.my-black-bg{
+    color: #2B2922;
+}
+body.background {
+    /*background-color: #2B2922;*/
+}
+/*
+h1 {
+    color: #E9F1DF;
+}
+
+h2 {
+    color: #E9F1DF;
+}
+
+h3 {
+    color: #E9F1DF;
+}*/
+
+.vertical-align {
+    /* Make it a flex container */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /* Align the bootstrap's container vertically */
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    /* In legacy web browsers such as Firefox 9
+     we need to specify the width of the flex container */
+    width: 100%;
+    /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
+     hence the bootstrap's container won't be aligned to the center anymore.
+  
+     Therefore, we should use the following declarations to get it centered again */
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
