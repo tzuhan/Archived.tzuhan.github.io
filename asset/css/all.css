@@ -32,7 +32,7 @@ body {
     background-image: url("../img/web/wave-blue.png");
 }
 .wave-orange{
-    left: 5vh;
+    left: 6vh;
     z-index: -5;
     background-image: url("../img/web/wave-orange.png");
 }
@@ -48,22 +48,21 @@ body {
 /*///////////////////////////////////////*/
 .whale{
     position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
+    top: 50px;
+    right: 0px;
     width: 100%;
 }
 .whale-bg{
     z-index: -4;
     overflow: hidden;
-    background-image: url("../img/web/whale-bg-low.png");
     /* not a <clippath>
+    background-image: url("../img/web/whale-bg-low.png");
     clip-path: url("../img/web/whale-mask.png");
     -webkit-clip-path: url("../img/web/whale-mask.png");*/
     /*-webkit-mask-box-image: url("../img/web/whale-mask.png");
     -webkit-mask-image: url("../img/web/whale-mask.png");
-    */
     mask: url(../img/web/circle.svg#whale-mask);
+    */
 }
 .whale-clip{
     -webkit-clip-path: polygon(539px 1285px, 595.859px 1248.558px, 618.143px 1240.23px, 644.409px 1239.442px, 
