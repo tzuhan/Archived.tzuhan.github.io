@@ -156,7 +156,8 @@ body {
     color: #2B2922;
 }
 body.background {
-    /*background-color: #2B2922;*/
+  min-height: 2000px;
+  padding-top: 70px;
 }
 /*
 h1 {
@@ -185,7 +186,7 @@ h3 {
     -ms-flex-align: center;
     align-items: center;
     /* In legacy web browsers such as Firefox 9
-     we need to specify the width of the flex container */
+we need to specify the width of the flex container */
     width: 100%;
     /* Also 'margin: 0 auto' doesn't have any effect on flex items in such web browsers
      hence the bootstrap's container won't be aligned to the center anymore.
