@@ -21,12 +21,12 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
     <!-- Bootstrap -->
     <link href="asset/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Optional theme -->
+    <!-- this add gradient to elements
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    -->
     <!-- My stylesheet-->
-    <link rel="stylesheet" type="text/css" href="asset/css/all.css">
+    <link href="asset/css/all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,34 +36,38 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
         <![endif]-->
 </head>
 
-<body class='background'>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-header" id="top">
-                <a class="navbar-brand" href="#home">Tzu-Han's Protfolio</a>
+<body>
+    <nav class="navbar nav-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img alt="Tzu-Han's Protfolio" src="asset/img/nav-brand.png">
+                </a>
             </div>
-            
-            <div id="navbar" class="collapse navbar-collapse">
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#home">Home</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <p id="lang-select" class="navbar-btn navbar-right btn-group" role="group" aria-lable="select language">
+                    <a href="#" class="btn btn-default btn-sm">English</a>
+                    <a href="#" class="btn btn-default btn-sm">正體中文</a>
+                    <a href="#" class="btn btn-default btn-sm">日本語</a>
+                </p>
             </div>
             <!--/.nav-collapse -->
         </div>
     </nav>
     <div class="container" role="main">
         <!-- home page -->
-        <div class="full-win" id="home">
-            <div class="page-header">
-                <h1>Diving into the world of wonders</h1>
-            </div>
+        <div class="" id="home">
             <!--
             <div class="row">
                 <div class="wave wave-red"></div>
@@ -75,23 +79,13 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
                 <div class="wave wave-white"></div>
             </div>-->
         </div>
-
-
-
-
         <!-- portfolio page -->
-        <div class="full-win" id="portfolio">
+        <div class="" id="portfolio">
             <div class="page-header">
                 <h1>Portfolio</h1>
             </div>
-
             <div class="row"></div>
         </div>
-
-
-
-
-
         <!-- contact page -->
         <div class="full-win" id="contact">
             <div class="page-header">
