@@ -21,6 +21,15 @@ $(document).ready(function(){
     reposition();
 });
 
+/*Navigation bar animation*/
+$("ul.navbar-nav > li").click(function(e) {
+    $("ul.navbar-nav > li.active").removeClass("active");
+    var $nav_tab = $(this);
+    if(!$nav_tab.hasClass("active")){
+        $nav_tab.addClass("active");
+    }
+});
+
 
 /*Reposition function*/
 function reposition(){

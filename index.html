@@ -18,13 +18,17 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
     <meta name="description" content="Tzu-Han Hsu's Portfolio Website">
     <meta name="author" content="Tzu-Han Hsu">
     <meta name="created-time" content="2015/01/09">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="asset/js/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="asset/js/bootstrap.min.js"></script>
     <!-- Bootstrap -->
-    <link href="asset/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- My stylesheet-->
     <link rel="stylesheet" type="text/css" href="asset/css/all.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -44,8 +48,8 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <!--<li class="active"><a href="#home">Home</a></li>-->
+                    <li class="active"><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -54,6 +58,7 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
     </nav>
     <div class="container" role="main">
         <!-- home page -->
+        <!--
         <div class="full-win" id="home">
             <div class="page-header">
                 <h1>Diving into the world of wonders</h1>
@@ -72,7 +77,7 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
                 <div class="wave wave-white"></div>
             </div>
         </div>
-
+        -->
 
 
 
@@ -82,7 +87,44 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
                 <h1>Portfolio</h1>
             </div>
 
-            <div class="row"></div>
+            <div class="row">
+                <div class="col-xs-12 col-md-4 pro-block">
+                    <img class="col-xs-6 img-thumbnail pro-image" alt="first pro" src="asset/img/project/1.png">
+                    <div class="col-xs-6">
+                        <div class="pro-brief-info">
+                            <h4>Header</h4>
+                            <p>test</p>
+                            <p>
+                                <a class="btn btn-default" href="#" role="button">Detail >></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 pro-block">
+                    <img class="col-xs-6 img-thumbnail pro-image" alt="second pro" src="asset/img/project/2.png">
+                    <div class="col-xs-6">
+                        <div class="pro-brief-info">
+                            <h4>Header</h4>
+                            <p>test</p>
+                            <p>
+                                <a class="btn btn-default" href="#" role="button">Detail >></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 pro-block">
+                    <img class="col-xs-6 img-thumbnail pro-image" alt="third pro" src="asset/img/project/3.png">
+                    <div class="col-xs-6">
+                        <div class="pro-brief-info">
+                            <h4>Header</h4>
+                            <p>test</p>
+                            <p>
+                                <a class="btn btn-default" href="#" role="button">Detail >></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -92,13 +134,13 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
         <!-- contact page -->
         <div class="full-win" id="contact">
             <div class="page-header">
-                <h1>Contact information</h1>
+                <h1>Contact Information</h1>
             </div>
             <div class="row"></div>
             <table class="table table-bordered col-md-8">
                 <tr>
                     <td><b>Name</b></td>
-                    <td>Tzu-Han Hsu, 徐子函（ジョシカン）</td>
+                    <td>Tzu-Han Hsu, 徐子函（シュウ ツーハン）</td>
                 </tr>
                 <tr>
                     <td><b>Nationality</b></td>
@@ -113,7 +155,7 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
                 <td>
                     <ul class="list-unstyled">
                         <li>Mail: <img src="http://safemail.justlikeed.net/e/d63e5c308fb6da10ae2c1e8f0c472aaa.png" border="0" align="absbottom"></a></li>
-                        <li>LinkedIn: </li>
+                    <li>LinkedIn: <a href="https://tw.linkedin.com/in/tzuhan">TzuHan Hsu</a></li>
                         <li>Pixiv: <a href="http://www.pixiv.net/member.php?id=2495093">2495093</a></li>
                     </ul>
                 </td>
@@ -121,16 +163,12 @@ resize image http://stackoverflow.com/questions/12991351/css-force-image-resize-
             <tr>
                 <td><b>Self Introduction<b></td>
                 <td>
-                    <p>A game programmer as vocation, and a 2D artist as an amateur.</p>
+                    <p>A game programmer and a 2D digital drawing lover.</p>
                 </td>
             </tr>
         </table>
         </div>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="asset/js/jquery-1.11.3.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="asset/js/bootstrap.min.js"></script>
     <script src="asset/js/all.js"></script>
   </body>
 </html>
